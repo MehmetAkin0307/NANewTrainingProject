@@ -11,11 +11,6 @@ public class Deneme {
         WebDriver driver = myBrowser.invokeBrowser();
         driver.get("https://jqueryui.com/droppable/");
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.cssSelector("iframe.demo-frame")));
-        WebElement source = driver.findElement(By.cssSelector("#draggable"));
-        WebElement target = driver.findElement(By.cssSelector("#droppable"));
-        Actions act = new Actions(driver);
-        act.dragAndDrop(source, target).build().perform();
+
     }
 }
