@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ActionDragAndDrop {
     public static void main(String[] args) {
-     InvokeBrowser myBrowser=new InvokeBrowser();
+     InwokeBrowser2 myBrowser=new InwokeBrowser2();
         WebDriver driver=myBrowser.invokeBrowser();
         driver.get("http://demo.guru99.com/test/drag_drop.html");
         WebDriverWait wait=new WebDriverWait(driver,10);

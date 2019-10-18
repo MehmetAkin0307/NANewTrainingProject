@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CapitalLetterActions {
     public static void main(String[] args) {
-        InvokeBrowser myBrowser=new InvokeBrowser();
+        InwokeBrowser2 myBrowser=new InwokeBrowser2();
         WebDriver driver=myBrowser.invokeBrowser();
         driver.get("http://facebook.com");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

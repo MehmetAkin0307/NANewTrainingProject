@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 public class NewWindowsHandlesMethod {
     public static void main(String[] args) {
-        InvokeBrowser myBrowser = new InvokeBrowser();
+        InwokeBrowser2 myBrowser = new InwokeBrowser2();
         WebDriver driver = myBrowser.invokeBrowser();
         driver.get("https://accounts.google.com/signup");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

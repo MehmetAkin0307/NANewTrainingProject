@@ -7,9 +7,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Frames {
     public static void main(String[] args) {
-        InvokeBrowser myBrowser = new InvokeBrowser();
+
+        InwokeBrowser2 myBrowser = new InwokeBrowser2();
         WebDriver driver = myBrowser.invokeBrowser();
         driver.get("https://jqueryui.com/droppable/");
+
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.cssSelector("iframe.demo-frame")));
         WebElement source = driver.findElement(By.cssSelector("#draggable"));
